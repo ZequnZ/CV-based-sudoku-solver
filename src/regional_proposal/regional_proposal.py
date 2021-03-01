@@ -1,4 +1,4 @@
-import random
+"""Regional proposal"""
 
 import cv2
 import numpy as np
