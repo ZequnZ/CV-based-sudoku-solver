@@ -2,7 +2,7 @@
 
 ## Steps:
 1. Load the image  
-![1](./asset/emp_png)  
+![1](./asset/emp_1.png)  
 2. get regional proposals from [MSER algorithm](https://en.wikipedia.org/wiki/Maximally_stable_extremal_regions)  
 ![2](./asset/emp_2.png)
 3. Detect whether digits or not in regional proposals  
