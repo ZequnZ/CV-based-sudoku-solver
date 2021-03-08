@@ -30,7 +30,7 @@ Check the example below to know more about how it works:
 Clone this repo:
 `git clone https://github.com/ZequnZ/Sudoku-generator-solver.git`  
 ### Dependency management
-`pyenv` + `poetry`
+Here I choose `pyenv` + `poetry` to create and manage a reproducible development environment.  
 
 Install [pyenv](https://github.com/pyenv/pyenv#choosing-the-python-version):  
 ```
@@ -47,7 +47,7 @@ Install  *python3.8.2*:
 pyenv install 3.8.2
 ```
 
-Intall and ctivate virtual env:  
+Intall and activate virtual env:  
 ```
 pyenv virtualenv 3.8.2 sudoku382
 ```  
