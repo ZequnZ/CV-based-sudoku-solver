@@ -22,26 +22,27 @@
 Clone this repo:
 `git clone https://github.com/ZequnZ/Sudoku-generator-solver.git`  
 ### Dependency management
-`[pyenv](https://github.com/pyenv/pyenv#choosing-the-python-version)` + `[poetry](https://python-poetry.org/)`
+`pyenv` + `poetry`
 
-Install `pyenv`:
+Install [pyenv](https://github.com/pyenv/pyenv#choosing-the-python-version):  
 `curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash`  
 
-Modify env variable:
+Modify env variable:  
 `export PATH="<.pyenv path>/bin:$PATH"`
 
-Install  `python3.8.2`:  
+Install  *python3.8.2*:  
 `pyenv install 3.8.2`
 
 Intall and ctivate virtual env:  
 `pyenv virtualenv 3.8.2 sudoku382`  
 `pyenv activate sudoku382`
 
-Install `poetry`
+Install [poetry](https://python-poetry.org/)
 `pip install poetry`
 
-Install dependency:
+Install dependency:  
 `poetry install`
+
 
 TODO: docker support
 
