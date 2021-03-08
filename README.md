@@ -7,6 +7,8 @@ This repo implements two CNN-based models plus other functionalities to achieve 
 - Translate the bounding boxes and digits from the models into a 'sudoku'.  
 - Solve the soduku and draw the solution back on the image.  
 
+Check the example below to know more about how it works:  
+
 ## Example:
 1. Load the image  
 ![1](./asset/emp_1.png)  
@@ -63,7 +65,11 @@ Install dependency:
 poetry install
 ```
 
-
 TODO: docker support
+
+## Usage
+```python
+python cv_sudoku_solver.py <img_path>
+```
 
 ## TODO
