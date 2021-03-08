@@ -25,7 +25,7 @@ class SudokuSolver(Sudoku):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-    def sudoku_solver_backtrack(self, r: int, c: int) -> np.array:
+    def sudoku_solver_backtrack(self, r: int = 0, c: int = 0) -> np.array:
 
         if c == 9:
             return self.sudoku_solver_backtrack(r + 1, 0)

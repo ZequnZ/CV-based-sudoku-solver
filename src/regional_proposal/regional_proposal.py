@@ -19,9 +19,7 @@ class RpMser(BaseRegionalProposal):
         self.thickness = thickness
 
     def get_iou(self, b1, b2):
-        # inter_area = (min(b1[1] + b1[3], b2[1] + b2[3]) - max(b1[1], b2[1])) * (
-        #     min(b1[0] + b1[2], b2[0] + b2[2]) - max(b1[0], b2[0])
-        # )
+
         inter_height = max(0, min(b1[1] + b1[3], b2[1] + b2[3]) - max(b1[1], b2[1]))
         inter_width = max(0, min(b1[0] + b1[2], b2[0] + b2[2]) - max(b1[0], b2[0]))
         inter_area = inter_height * inter_width

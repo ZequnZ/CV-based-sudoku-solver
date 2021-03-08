@@ -1,6 +1,15 @@
-# CV based Sudoku-solver
+# CV based Sudoku-solver(generator: to be added)  / 基于计算机视觉技术的数独解答器（生成器待添加）
+---
+Sudoku solving algorithm is quite common - a classic programming problem(e.g. [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)). 
+It would be much more interesting to use Computer vision technique to solve a sudoku in an image, which can be seen as an **Object detection** problem.
+This repo implements two CNN-based models plus other functionalities to achieve this challenge:  
+- By using [SVHN dataset](http://ufldl.stanford.edu/housenumbers/), train **digit-detector** and **digit-classifier** models from scratch.   
+- Translate the bounding boxes and digits from the models into a 'sudoku'.  
+- Solve the soduku and draw the solution back on the image.  
 
-## Steps:
+Check the example below to know more about how it works:  
+
+## Example:
 1. Load the image  
 ![1](./asset/emp_1.png)  
 2. get regional proposals from [MSER algorithm](https://en.wikipedia.org/wiki/Maximally_stable_extremal_regions)  
@@ -17,5 +26,50 @@
 ![7](./asset/emp_7.png)  
 
 ## Installation
+
+Clone this repo:
+`git clone https://github.com/ZequnZ/Sudoku-generator-solver.git`  
+### Dependency management
+Here I choose `pyenv` + `poetry` to create and manage a reproducible development environment.  
+
+Install [pyenv](https://github.com/pyenv/pyenv#choosing-the-python-version):  
+```
+curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+```  
+
+Modify env variable:  
+```
+export PATH="<.pyenv path>/bin:$PATH"
+```
+
+Install  *python3.8.2*:  
+```
+pyenv install 3.8.2
+```
+
+Intall and activate virtual env:  
+```
+pyenv virtualenv 3.8.2 sudoku382
+```  
+```
+pyenv activate sudoku382
+```
+
+Install [poetry](https://python-poetry.org/)
+```
+pip install poetry
+```
+
+Install dependency:  
+```
+poetry install
+```
+
+TODO: docker support
+
+## Usage
+```python
+python cv_sudoku_solver.py <img_path>
+```
 
 ## TODO
