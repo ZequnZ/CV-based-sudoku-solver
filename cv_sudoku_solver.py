@@ -7,7 +7,7 @@ import numpy as np
 import tensorflow as tf
 
 from src.sudoku.sudoku import SudokuSolver
-from src.sudoku_translator import sudoku_translator, SudokuTranlator
+from src.sudoku_translator import SudokuTranlator
 from src.regional_proposal.regional_proposal import RpMser
 from src.utils.utils import draw_bboxes, draw_digits, remove_overlapped_bboxes
 
