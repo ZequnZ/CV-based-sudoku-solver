@@ -1,5 +1,6 @@
 # CV based Sudoku-solver
 
+
 ## Steps:
 1. Load the image  
 ![1](./asset/emp_1.png)  
@@ -17,5 +18,31 @@
 ![7](./asset/emp_7.png)  
 
 ## Installation
+
+Clone this repo:
+`git clone https://github.com/ZequnZ/Sudoku-generator-solver.git`  
+### Dependency management
+`[pyenv](https://github.com/pyenv/pyenv#choosing-the-python-version)` + `[poetry](https://python-poetry.org/)`
+
+Install `pyenv`:
+`curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash`  
+
+Modify env variable:
+`export PATH="<.pyenv path>/bin:$PATH"`
+
+Install  `python3.8.2`:  
+`pyenv install 3.8.2`
+
+Intall and ctivate virtual env:  
+`pyenv virtualenv 3.8.2 sudoku382`  
+`pyenv activate sudoku382`
+
+Install `poetry`
+`pip install poetry`
+
+Install dependency:
+`poetry install`
+
+TODO: docker support
 
 ## TODO
